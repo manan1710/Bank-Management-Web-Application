@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>TCS</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>CustomerController</servlet-name>
+    <servlet-class>controller.CustomerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerController</servlet-name>
+    <url-pattern>/CustomerController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AccountController</servlet-name>
+    <servlet-class>controller.AccountController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountController</servlet-name>
+    <url-pattern>/AccountController</url-pattern>
+  </servlet-mapping>
+  
+  <!-- <servlet>
+    <servlet-name>TransactionController</servlet-name>
+    <servlet-class>controller.TransactionController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransactionController</servlet-name>
+    <url-pattern>/TransactionController</url-pattern>
+  </servlet-mapping> -->
+  
+  <servlet>
+    <servlet-name>LoginLogoutController</servlet-name>
+    <servlet-class>controller.LoginLogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginLogoutController</servlet-name>
+    <url-pattern>/LoginLogoutController</url-pattern>
+  </servlet-mapping>
+</web-app>
